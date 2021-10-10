@@ -40,7 +40,7 @@ resource "azurerm_virtual_network" "myvnet" {
 # Block-4: Input Variables Block
 # Define a Input Variable for Azure Region 
 variable "azure_region" {
-  default = "eastus"
+  default = "uksouth"
   description = "Azure Region where resources to be created"
   type = string
 }
