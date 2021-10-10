@@ -3,9 +3,9 @@ terraform {
   required_version = ">= 1.0.0"
   required_providers {
     azurerm = {
-      source = "hashicorp/azurerm"
+      source  = "hashicorp/azurerm"
       version = ">= 2.0" # Optional but recommended in production
-    }    
+    }
   }
 }
 
@@ -16,6 +16,6 @@ provider "azurerm" {
 
 # Create Resource Group 
 resource "azurerm_resource_group" "my_demo_rg1" {
-  location = "eastus"
-  name = "my-demo-rg1"  
+  location = "uksouth"
+  name     = "my-demo-rg1"
 }
